@@ -83,6 +83,8 @@ const state = {
     allProjectsBar: null
   }
 };
+// Cho phép module đồng bộ đám mây (cloud-sync.js) đọc/cập nhật trạng thái
+window.state = state;
 
 // --- HELPER FUNCTIONS ---
 function formatVND(value) {
