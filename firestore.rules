@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Chỉ cho phép đọc/ghi document dữ liệu dùng chung của ban, có hạn dùng
+    // (sau ngày này cần bật Authentication và siết luật — xem HUONG_DAN_TRIEN_KHAI.md)
+    match /kscp/{docId} {
+      allow read, write: if request.time < timestamp.date(2026, 8, 15);
+    }
+  }
+}

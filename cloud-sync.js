@@ -18,12 +18,12 @@
 
 const CLOUD_CONFIG = {
   firebase: {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
+    apiKey: "AIzaSyB-GLhnaBtsSwFSlNI3fzUxp4OIeEb8LUs",
+    authDomain: "kscp-ban.firebaseapp.com",
+    projectId: "kscp-ban",
+    storageBucket: "kscp-ban.firebasestorage.app",
+    messagingSenderId: "409503376376",
+    appId: "1:409503376376:web:e725cbdcf76de116ea6c0d"
   },
   // Định danh kho dữ liệu dùng chung của ban (mọi người phải giống nhau)
   docId: "kscp-ban-chung"
